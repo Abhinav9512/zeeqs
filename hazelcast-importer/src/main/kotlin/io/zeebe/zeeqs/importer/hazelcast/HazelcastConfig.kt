@@ -5,5 +5,6 @@ import javax.persistence.Id
 
 @Entity
 data class HazelcastConfig(
-        @Id val id: String,
+        val id: String,
+        @Id var ringBufferName: String,
         var sequence: Long)
